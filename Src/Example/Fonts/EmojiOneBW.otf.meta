@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d7322e6c058996e47ac18b5e0ed76a58
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - EmojiOne
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 668a2b3c90120844fb11a4ecadee8302, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
