@@ -14,13 +14,15 @@ Here is an example of using it to send a public Nostr message with Nostr-Unity3D
 
 Example subscription for public notes.
 
-1. --||--
+1. KeyManager.GenerateNewRandomPrivateKey();
 2. NostrEventFilter filter = new NostrEventFilter();
 3. filter.kinds.Add(1);
 4. string content = NostrClient.instance.ReturnReqEventString(filter);
 5. StartCoroutine(NostrClient.instance.SendEvent(content));
-//Message receive EventHandler
-//NostrClient.instance.note.ValueChange
+
+Message receive EventHandler
+-NostrClient.instance.note.ValueChange
 
 -Simple
+
 [Nostr Profile ( snort client link )](https://snort.social/p/npub1hk7y7fnnfl9sph0h9xezyvc43q6kk5q6ccxmlc2zdv93ndw8kauslmeqea)
