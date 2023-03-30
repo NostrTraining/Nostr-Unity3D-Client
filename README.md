@@ -10,18 +10,19 @@ The purpose was to learn how the Nostr protocol works and better understand digi
 Here is an example of using it to send a public Nostr message with Nostr-Unity3D-Client (Note kind 1).
 
 1. KeyManager.GenerateNewRandomPrivateKey();
-2. NostrClient.instance.SendNote("public message", tags="[]", 1);
+2. NostrClient.instance.LoadAllRelays();
+3. NostrClient.instance.SendNote("public message", tags="[]", 1);
 
 Example subscription for public notes.
 
 1. KeyManager.GenerateNewRandomPrivateKey();
-2. NostrEventFilter filter = new NostrEventFilter();
-3. filter.kinds.Add(1);
-4. string content = NostrClient.instance.ReturnReqEventString(filter);
-5. StartCoroutine(NostrClient.instance.SendEvent(content));
+2. NostrClient.instance.LoadAllRelays();
+3. NostrEventFilter filter = new NostrEventFilter();
+4. filter.kinds.Add(1);
+5. string content = NostrClient.instance.ReturnReqEventString(filter);
+6. StartCoroutine(NostrClient.instance.SendEvent(content));
 
-Message receive EventHandler
--NostrClient.instance.note.ValueChange
+Message receive EventHandler - NostrClient.instance.note.ValueChange
 
 -Simple
 
